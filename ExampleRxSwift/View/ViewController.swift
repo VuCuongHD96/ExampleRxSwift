@@ -10,13 +10,15 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-final class ViewController: UIViewController {
+final class ViewController: UIViewController, BindableType {
+    var viewModel: ViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        bindViewModel()
     }
 
-
+    func bindViewModel() {
+        print("chạy")
+    }
 }
-
